@@ -1,5 +1,6 @@
+<div align="center">
+    <img src="https://github.com/jmprz/seeknfind/blob/d11f109dd0a7ef3e4eeb63a56a77999496518ed3/logo.svg" alt="Logo" width="120" height="120">
 <h3 align="center">SeekNFind</h3>
-
   <p align="center">
    Information Management System for Lost and Found Items of the College of Computing Studies at EARIST - Manila
     <br />

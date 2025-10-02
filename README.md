@@ -5,7 +5,6 @@
    Information Management System for Lost and Found Items of the College of Computing Studies at EARIST - Manila
     <br />
     <br />
-    <a href="https://seeknfind.000.pe/">View Live Demo</a>
   </p>
 </div>
 

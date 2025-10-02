@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html body{
+font-family: Poppins, sans-serif;
+background-color: #f4f5fa;
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 100%;
+}
+
+/* Opening Animation */
+.tab-pane.fade.show.active {
+    animation: fadeInUp 0.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: inherit;
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px !important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #526afeff; 
+    border-radius: 50px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #262a35;
+    border-radius: 50px;
+  }
+
+/* Dark Mode Start */
+body.dark{
+    background-color: #191a1f;
+    color: #ffffff;
+  }
+
+.dark .card{
+    background-color: #262a35;
+    color: #ffffff;
+}
+
+.dark .snf_nav_color{
+    background-color: #262a35;
+    color: #ffffff;
+}
+
+.dark .tablinks{
+    color: #ffffff;
+}
+
+.dark .nav .active {
+    background-color: #21255e !important;
+    color:#babef7 !important;   
+}
+.dark .text-muted{
+    color: #ffffff !important;
+}
+
+.dark .form-control{
+    background-color: #262a35;
+    border-color: #262a35;
+}
+
+.dark .form-control::placeholder{
+    color: #ffffff;
+}
+
+.dark .btn_search{
+    background-color: #21255e !important;
+    color:#babef7 !important;   
+}
+
+.dark .snf_add{
+    background-color: #1a4230 !important;
+color: #b3dbc9 !important;
+}
+
+.dark .snf_report{
+    background-color: #500016 !important;
+color: #e999af !important;
+}
+
+.dark .snf_view{
+    background-color: #21255e !important;
+    color:#babef7 !important;   
+}
+
+.dark .snf_view_active{
+    background-color: #525cebff !important;
+    color: white !important;
+}
+
+.dark .bg-success{
+    background-color: #21255e !important;
+    color:#babef7 !important;   
+}
+
+.dark .bg-danger{
+    background-color: #500016 !important;
+    color: #e999af !important;
+}
+
+.dark .bg-secondary{
+    background-color: #1a4230 !important;
+    color: #b3dbc9 !important;
+}
+
+.dark .bg-warning{
+    background-color: #665000 !important;
+    color: #ffe999 !important;
+}
+
+.dark .modal-header{
+    background-color: #191a1f;
+    color: #ffffff;
+    border-bottom: 0 none;
+}
+
+.dark .modal-body{
+    background-color: #191a1f;
+    color: #ffffff;
+}
+
+.dark input, select, textarea{
+    color: white;
+}
+
+.dark .form-control{
+    color: white;
+}
+
+.dark .form-control::placeholder{
+    color: #686f79;
+}
+
+.dark .flex-grow-1 p{
+    color: #686f79 !important;
+}
+
+.dark .form-control i{
+    color: white;
+}
+
+.dark .form-label i{
+    color: white;
+}
+
+.dark .fw-bold{
+    color: white;
+}
+
+.dark .form-select{
+    background-color: #262a35;
+    color: #ffffff;
+    border-color: #262a35;
+}
+
+.dark .accordion-item{
+    background-color: #262a35;
+    color: #ffffff;
+}
+
+.dark .img-thumbnail{
+    background-color: #262a35 !important;
+    border: none !important;
+}
+.dark .form-check-input.custom-switch {
+    background-color: #262a35;
+    border-color: #191a1f;
+}
+
+.dark .input-group-text {
+   background-color: #191a1f;
+   color: #686f79;
+   border-color: #686f79;
+}
+
+.dark .input-group-form {
+    background-color: #191a1f;
+    border-color: #686f79 ;
+    color: white;
+ }
+
+/* Dark Mode Ends */
+
+
+.password-toggle {
+    position: relative;
+}
+.password-toggle .form-control {
+    padding-right: 2.5rem;
+}
+.password-toggle .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input-group-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.input-group-btn input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.form-check-input.custom-switch:checked {
+    background-color: #526afeff;
+    border-color: #526afeff;
+}
+
+
+.card{
+ border: 0px !important;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px !important;
+}
+
+.email_card{
+ box-shadow: none !important;
+ background-color: #f4f5fa;
+}
+a:link {
+    text-decoration: none;
+    color: #526afeff;
+  }
+
+a:hover {
+    text-decoration: underline;
+  }
+
+  .btn a{
+    color: black;
+  }
+.surface_color{
+border: none;
+}
+
+.snf_shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.snf_color{
+    background-color: #526afeff;
+}
+
+.snf_white{
+    background-color: #ffffff;
+}
+
+.snf_fcolor{
+    color: #526afeff;
+}
+
+.font{
+    font-family: Poppins, sans-serif;
+}
+
+.nav-pills .active{
+    background-color: #dce1ff !important;
+    color:#525cebff !important;   
+    width: 10rem !important;
+}
+
+.snf_btn{
+ width: 100%;
+}
+
+.snf_btn a{
+    color: #191a1f;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+
+.btn.active{
+       background-color: #dce1ff !important;
+    color:#525cebff !important;  
+    border-style: none !important;
+}
+
+.btn_search{
+    background-color: #dce1ff !important;
+ color:#525cebff !important;  
+ border-style: none !important;
+}
+
+.nav-link{
+text-decoration:  none !important;
+}
+
+.nav-link:hover{
+background-color: #525cebff !important;
+color: white !important;
+    }
+
+
+.page-link{
+    background-color: #525cebff !important;
+color: white !important;
+}
+
+
+.snf_nav{
+    width: 100%;
+}
+
+.snf_nav_color{
+ background-color: #ffffff;
+}
+
+.snf_add{
+    background-color: #d9ede4 !important;
+color: #40A578 !important;
+}
+.snf_add{
+    background-color: #d9ede4 !important;
+color: #40A578 !important;
+}
+
+.snf_add:hover{
+    background-color: #40A578 !important;
+color: white !important;
+}
+
+.snf_add{
+    background-color: #d9ede4 !important;
+color: #40A578 !important;
+}
+
+.snf_report{
+    background-color: #f4ccd7 !important;
+color: #C80036 !important;
+}
+
+.snf_report:hover{
+    background-color: #C80036 !important;
+color: white !important;
+}
+
+.snf_view{
+    background-color: #dce1ff !important;
+color: #525cebff !important;
+}
+
+.snf_view_active{
+    background-color: #525cebff !important;
+color: white !important;
+}
+
+.snf_view:hover{
+    background-color: #525cebff !important;
+color: white !important;
+}
+
+.btn:hover {
+    background-color: #525cebff;
+    color: white;   
+}
+.container-fluid1{
+padding:0px;
+}
+
+.snf_search_margin{
+margin-left: 300px;
+}
+
+.snf_contents_margin{
+margin-left: 350px;  
+}
+
+.snf_items_margin{
+    margin-right: 200px;  
+}
+
+.snf_login_logo{
+    width: 80px;
+}
+.first_col{
+justify-content: center ;
+}
+
+.custom-card{
+    width: 350px;
+}
+
+.card-img-top {
+    width: 320px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.input-group-text{
+    background-color: #ffffff;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 50px; /* Adjust the distance from the bottom */
+    right: 50px; /* Adjust the distance from the right */
+    z-index: 1000; /* Ensure it's above other content */
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+}
+
+.floating-button2 {
+    position: fixed;
+    bottom: 50px; /* Adjust the distance from the bottom */
+    right: 50px; /* Adjust the distance from the right */
+    z-index: 1000; /* Ensure it's above other content */
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 35px;
+}
+
+.white_text{
+    color: white;
+}
+
+.backbtn{
+    border: none;
+    background-color:#ffffff00 ;
+}
+
+
+   
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+          }
+          
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+          
+          /* Create an active/current tablink class */
+          .tab button.active {
+            background-color: #526afeff;
+            color: white;
+          }
+          
+          /* Style the tab content */
+          .tabcontent {
+            display: none;
+            border-top: none;
+          }
+          .small{
+          display:none;
+          }
+          .bottom-row {
+        background-color: #28a745;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .bottom-content {
+        text-align: center;
+    }
+    .side-drawer {
+        background-color: #ffffff; /* Set background color */
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 300px; /* Set width for the side drawer */
+        z-index: 1;
+    }
+    
+    .side-drawer .tab {
+        margin-top: 20px; /* Add some margin for better spacing */
+    }
+    
+
+/* Profile Dropdown */
+.profile-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  .profile-details {
+    flex-grow: 1;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .profile-email {
+    font-size: smaller; /* Adjust size as needed */
+    color: #666; /* Adjust color as needed */
+  }
+
+  .profile-card {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 600px;
+}
+.profile-image {
+    width: 300px;
+    height: 300px;
+}
+
+.profile-image-fixed {
+    width: 300px; /* Adjust this value as needed */
+    height: 300px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the entire area, maintaining aspect ratio */
+    border-radius: 50%; /* For circular profile images */
+}
+
+.preview_image{
+    display: none; 
+    max-width: 100%; 
+    margin-top: 10px;
+}
+  
+.dropdown-toggle{
+color: white ;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #007bff;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav .snf_btn {
+    display: flex;
+    align-items: center;
+}
+
+.nav .snf_btn i {
+    margin-right: 0.5rem;
+}
+
+.card.custom-card {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.name {
+    font-size: 0.9rem !important;
+    font-weight: bold;
+}
+.account-type {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+.snf_btn img {
+    margin-right: 10px;
+}
+.snf_btn .name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.snf_btn .account-type {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+.snf_btn .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures left alignment */
+    text-align: left;
+}
+.card-img-container {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image container */
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    border-radius: 20px;
+}
+.modal-header{
+    border-bottom: 0 none !important;
+}
+
+.img-thumbnail{
+    background-color: white !important;
+    border: none !important;
+}
+
+.filter-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .filter-container select {
+        max-width: 200px;
+    }
+    .fixed-nav {
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh; /* Full height */
+width: 250px; /* Width of the sidebar */
+z-index: 1000; /* Ensure it’s above other content */
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px !important;
+}
+
+.fixed-nav .nav {
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.content-area {
+margin-left: 250px; /* Same as the width of the sidebar */
+}
+
+.search-bar {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.bg-success{
+    background-color: #dce1ff !important;
+    color: #525cebff !important;
+}
+
+.bg-danger{
+    background-color: #f4ccd7 !important;
+color: #C80036 !important;
+}
+
+.bg-secondary{
+    background-color: #d9ede4 !important;
+    color: #40A578 !important;
+}
+
+.bg-warning{
+    background-color: #fff4cc !important;
+    color: #FFC700 !important;
+}
+
+.logo {
+    width: 40px;
+}
+
+.snf_success{
+    background-color: #d9ede4 !important;
+    color: #40A578 !important;
+}
+
+.snf_success:hover{
+    background-color: #40A578 !important;
+    color: white !important;
+}
+
+
+.d-flex.align-items-center img {
+    margin-bottom: 0; /* Remove bottom margin from the image */
+}
+
+.d-flex.align-items-center h2 {
+    margin-bottom: 0; /* Ensure the heading doesn't have unnecessary bottom margin */
+    line-height: 1;   /* Optional: Adjust line height for better vertical alignment */
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+@media (max-width: 1199.98px){
+    .side-drawer{
+        width: 250px;
+    }
+    .snf_search_margin{
+        margin-left: 250px;
+        }
+    .form-control{
+        width: 570px;
+    }
+
+    .snf_items_margin{
+        margin-left: 0px;
+        }
+        
+        .snf_contents_margin{
+        margin-left: 270px;  
+        }
+    .custom-card{
+        width: 230px;
+    }
+    .card-img-top{
+     width: 200px;
+    }
+    .floating-button {
+        right: 70px; 
+    }
+        }
+
+@media (max-width: 992px) {
+    .snf_login_logo{
+      width: 300px;
+     }
+   .display-2{
+     font-size: 30px;
+  }
+   .first_col{
+     display: flex;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+      }
+     }
+
+@media (max-width: 820px) {
+.snf_login_logo{
+    width: 200px;
+    }
+.display-2{
+    font-size: 20px;
+}
+.first_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+}
+    .full{
+        display: none;
+    }
+    .small{
+    display:block;
+    }
+}
+.my-items{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        text-align: center;
+    }
+    .modal-body .form-control {
+        width: 470px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobile-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1030;
+        background-color: #343a40;
+    }
+
+    .content-with-fixed-footer {
+        padding-bottom: 60px;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .nav .snf_btn {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .nav .snf_btn span {
+        display: none;
+    }
+
+    .nav .snf_btn i {
+        font-size: 1.5rem;
+    }
+
+    .modal-body .form-control {
+        width: 365px !important;
+    }
+
+    .snf_nav_color {
+        background-color: #ffffff;
+    }
+
+    .fixed-nav {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height on mobile */
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
+
+    .fixed-nav .nav {
+        height: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content-area {
+        margin-left: 0; /* No margin on mobile */
+    }
+
+    .btn.active {
+        background-color: white !important;
+    }
+
+    .dark .btn.active {
+        background-color: #262a35 !important;
+    }
+
+    .bx-home-alt, .bx-collection, .bx-plus-circle, .bx-cog {
+        font-size: 2rem !important;
+    }
+    .tablinks.mb-3 {
+        margin-bottom: 0px !important;
+        margin-top: 0.8rem !important;
+    }
+    .rounded-circle{
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    }
+    .rounded-circle.ms-2{
+        margin-left: 0px !important;
+    }
+    .profile_mobile.active img{
+        border: 3px solid #526afeff !important;
+    }
+    .custom-col {
+        width: 50%;
+        float: left;
+    }
+    .profile-image-fixed {
+        margin-top: 10px;
+        width: 150px; /* Adjust this value as needed */
+        height: 150px; /* Adjust this value as needed */
+        object-fit: cover; /* Ensures the image covers the entire area, maintaining aspect ratio */
+        border-radius: 50%; /* For circular profile images */
+    }
+    .preview_image{
+        width: 14rem !important;
+        height: 14rem !important;
+        object-fit: cover; /* Ensures the image covers the entire area, maintaining aspect ratio */
+    }
+    .dark .card_login{
+        background-color: #191a1f;
+        box-shadow: none !important;
+        }
+.card_login{
+            background-color: white;
+            box-shadow: none !important;
+            }
+}
+
+@media (max-width: 400px) {
+    .bx-home-alt, .bx-collection, .bx-plus-circle, .bx-cog {
+        font-size: 1.6rem !important;
+    }
+    .rounded-circle{
+        width: 1.6rem !important;
+        height: 1.6rem !important;
+        }
+    .modal-body .form-control {
+        width: 300px !important;
+    }
+    .preview_image{
+        width: 14rem !important;
+        height: 14rem !important;
+        object-fit: cover; /* Ensures the image covers the entire area, maintaining aspect ratio */
+    }
+}
+/* Post */
+
+
+

@@ -15,7 +15,7 @@
 lost and found items within its premises. Despite occasional recoveries, not all lost
 belongings are successfully returned to their rightful owners. SeekNFind embodies a strategy for handling lost and found items,
 ensuring an effective and trustworthy solution customized to meet the specific
-requirements of the CCS community. This is a group based system for the course "Database Management Systems". It is closed source since it is used only for academic purposes. </p>
+requirements of the CCS community. This is a group based system for the course "Database Management Systems".</p>
 
 
 ### Built With
